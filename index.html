@@ -22,16 +22,17 @@
             backdrop-filter: blur(8px); /* Efeito de vidro fosco no fundo */
         }
 
-       /* Novo fundo com imagem da sala */
-        .smartphone-screen::before {
-            content: '';
-            position: absolute;
-            top: 0; left: 0; right: 0; bottom: 0;
-            background-image: url(https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=2070&auto=format&fit=crop); /* Cole o link da imagem aqui */
-            background-size: cover;
-            background-position: center;
-            opacity: 0.3; /* Ajuste a transparência para não atrapalhar a leitura do texto */
-            z-index: 0;
+        /* A "tela" do celular */
+        .smartphone-screen {
+            background-color: #ffffff;
+            width: 100%;
+            max-width: 380px; /* Largura típica de um iPhone */
+            border-radius: 35px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+            position: relative;
+            text-align: center;
+            padding: 40px 25px;
         }
 
         /* Padrão de fundo sutil geométrico (igual à imagem original) */
@@ -178,4 +179,3 @@
 
 </body>
 </html>
-
